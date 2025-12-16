@@ -1,0 +1,18 @@
+class company():
+    def __init__(self):
+        self.__companyname="TVK company"
+        self._usercount="2000K"
+    def subclass(self):
+        print(self.__companyname)
+        print(self._usercount)
+class childcompany(company):
+    pass
+
+party_member1=company()
+party_member2=childcompany()
+
+party_member1.subclass()
+party_member2._usercount="200M"
+print(party_member2._usercount)
+
+print(party_member2.__companyname) #it will throgh an error, because child class can't access the private variable
