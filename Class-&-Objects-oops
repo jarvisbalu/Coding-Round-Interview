@@ -1,0 +1,14 @@
+class goa:
+    drink=""
+    def party(self):
+        print("Start the party...!")
+    def nature(self):
+        print("What a view...!")
+ramesh=goa()
+suresh=goa()
+ramesh.drink="yes"
+suresh.drink="no"
+print("drink:", ramesh.drink)
+print("drink:", suresh.drink)
+ramesh.party()
+suresh.nature()
